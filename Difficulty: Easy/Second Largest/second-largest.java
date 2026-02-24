@@ -1,5 +1,6 @@
 class Solution {
     public int getSecondLargest(int[] arr) {
+        // code here
         int max = -1;
         int secMax = -1;
         
@@ -8,7 +9,7 @@ class Solution {
                 secMax = max;
                 max = n;
             }
-            else if(n < max && n >secMax){
+            else if(n > secMax && n < max){
                 secMax = n;
             }
         }
